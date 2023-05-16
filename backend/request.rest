@@ -1,0 +1,31 @@
+POST http://localhost:3001/api/services
+Content-Type: application/json
+
+{
+    "name": "teste 2",
+    "description": "tesando descricao 3",
+    "price": 200,
+    "image": "https://metagalaxia.com.br/wp-content/uploads/2023/01/Tanjiro-Kamado.webp"
+}
+
+###
+
+GET http://localhost:3001/api/services
+
+###
+GET http://localhost:3001/api/services/6463d3e49f86b5f32e62895f
+
+###
+DELETE  http://localhost:3001/api/services/6463d3e49f86b5f32e62895f
+
+###
+
+PUT http://localhost:3001/api/services/6463d29b95645e917856b319
+Content-Type: application/json
+
+{
+    "name": "teste final",
+    "description": "testaando descricao final",
+    "price": 2500,
+    "image": "https://metagalaxia.com.br/wp-content/uploads/2023/01/Tanjiro-Kamado.webp"
+}
